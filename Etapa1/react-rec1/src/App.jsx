@@ -5,18 +5,37 @@ import './App.css'
 
 import adaFoto from './assets/Ada_Lovelace.jpg';
 import ProfileCard from './components/ProfileCard';
+import Termometro from './components/Termometro';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <div>
+      <h1>Termometro</h1>
+    </div>
+    
       <div>
         <ProfileCard
         name="Ada Lovelace"
         avatar={adaFoto}
         initialFollowers={1457}
         />
+
+         <Termometro
+        title="Sala de Aula"
+        initial={25}
+        />
+         <Termometro
+        title="Geladeira"
+        initial={5}
+        />
+         <Termometro
+        title="Ambiente Externo"
+        initial={31}
+        />
+        
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
