@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Bolo Red Velvet",
+      "description": "bolo macio, úmido e vibrante, com sabor delicado de cacau, coberto com cream cheese. Ideal para festas e celebrações.",
+      "price": 50
+    },
+    {
+      "id": "f4b2",
+      "name": "Pavê de Morango",
+      "description": "Camadas delicadas de creme suave, biscoitos levemente embebidos e morangos frescos. Uma sobremesa clássica, refrescante e irresistível",
+      "price": 40
+    },
+    {
+      "id": "5735",
+      "name": "Copo da Felicidade",
+      "description": "Uma explosão de camadas doces com creme, bolo, frutas e coberturas irresistíveis. Perfeito para quem busca um momento de puro prazer!",
+      "price": 25
+    },
+    {
+      "id": "002f",
+      "name": "Pudim",
+      "description": "Clássico e cremoso, com calda dourada de caramelo. Uma sobremesa tradicional que derrete na boca e conquista todos os paladares",
+      "price": 35
+    }
+  ]
+}
