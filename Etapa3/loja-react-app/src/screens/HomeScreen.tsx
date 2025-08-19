@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
-
+import { useNavigation } from "@react-navigation/native";
 import { useTheme } from '../contexts/ThemeContext';
 
-function HomeScreen() {
+function HomeScreen({ navigation }: any) {
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -11,8 +11,9 @@ function HomeScreen() {
       <Text style={{ color: theme.colors.text, marginBottom: theme.spacing(1) }}>
         Home Screen
       </Text>
-      <Button title="Alternar Tema" color={theme.colors.primary}
-      onPress={toggleTheme} />
+      <Button title="Alternar Tema" color={theme.colors.primary} onPress={toggleTheme} />
+      <Button title="Ir para Detalhes" onPress={ () => navigation.navigate('Details')} />
+      <Button title="Login" onPress={ () => navigation.navigate('Login')} /> 
     </View>
   );
 }
