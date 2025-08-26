@@ -6,8 +6,20 @@ export type TabParamList = {
     Register: undefined,
 };
 
-export type RootStackparamList = {
+export type RootStackParamList = {
     Tabs: NavigatorScreenParams<TabParamList>;
     Details: { itemId: number };
-    Login: undefined
+    Login: undefined;
 }
+
+export type AuthTabParamList = {
+    Home: undefined,
+    Settings: undefined;
+}
+
+
+export type AuthStackParamList = {
+    Tabs: NavigatorScreenParams<AuthTabParamList>;
+    Details: { itemId: number };
+}
+
