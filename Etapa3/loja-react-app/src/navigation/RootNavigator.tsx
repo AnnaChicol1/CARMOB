@@ -7,12 +7,15 @@ import { useAuth } from "../contexts/AuthContext";
 
 export default function RootNavigator() {
   const { user, loading } = useAuth();
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems:
-       'center' }}>
-        <ActivityIndicator size="large" />
-      </View>
-    );
+
+    if (loading) {
+        return (
+        <View style={{ flex: 1, justifyContent: 'center', alignItems:
+        'center' }}>
+            <ActivityIndicator size="large" />
+        </View>
+        );
+    }
   
     return (
       <NavigationContainer>

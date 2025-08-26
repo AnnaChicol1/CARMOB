@@ -45,5 +45,5 @@ function StackNavigator() {
 }
 
 export default function AppNavigator() {
-   return <StackNavigator />
+   return (<StackNavigator />);
 }
