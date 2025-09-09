@@ -1,7 +1,6 @@
 import Config from "react-native-config";
 
-// const API_URL = Config.API_URL;
-const API_URL = 'http://10.81.205.24:5000';
+const API_URL = 'http://10.81.205.22:5000';
 
 export async function fakeLogin(email: string, password: string): Promise<string> {
   if (email === 'teste@example.com' && password === '123') {
@@ -9,7 +8,6 @@ export async function fakeLogin(email: string, password: string): Promise<string
   }
   return Promise.reject('Credenciais inválidas');
 }
-
 export async function requestLogin(email: string, password: string): Promise<string> {
   console.log(API_URL);
   if (email === 'admin@example.com' && password === 'admin123') {
