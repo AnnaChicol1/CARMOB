@@ -8,7 +8,7 @@ type AuthContextType = {
     login: (token: string) => Promise<void>;
     logout: () => Promise<void>;
     loading: boolean;
-    userData: any[]; // correção
+    userData: any[]; // correçãor
 };
 const AuthContext = createContext<AuthContextType>({} as AuthContextType);
 

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { View, TextInput, Button, StyleSheet, Text, SafeAreaView } from "react-native";
 
-import { requestRegister } from "../services/authServices";
+import { requestRegister } from "../services/authService";
 // import { useAuth } from "../contexts/AuthContext";
 
 export default function RegisterScreen({ navigation }: any) {
